@@ -11,9 +11,20 @@ Together in class, we will try to accomplish the following:
   1. Using ERB/CSS
   1. Using JS/CSS
 1. Make the table swipe-able on small devices
-1. Track visitors and page hits
+1. Track visitors and page hits: statcounter.com, clicky.com,
 1. Make the "Share" button send flight details to your phone
 1. Deploy the app to Heroku.com
+
+### CSS
+
+Specificity rules are a little insane.  Use the Chrome Inspector and "Copy CSS Path" to help write CSS rules that will override Bootstrap defaults.
+
+Raghu Betina (instructor at Booth) has a nice gist of resources: https://gist.github.com/rbetina/fa63df83d2f59fcab222
+
+
+### Tracking
+
+StatCounter.com works but not recommended for professional use.  Clicky.com is industrial-strength and easier to setup than Google Analytics, but *you must disable 3rd-party cookies in your browser if you want to see your own page hits from your own computer*.  Google Analytics is the best, but hard to understand because it's geared more for marketing departments and advertising campaigns.
 
 
 ### Deploying to Heroku
