@@ -24,7 +24,7 @@ Raghu Betina (instructor at Booth) has a nice gist of resources: https://gist.gi
 
 ### Tracking
 
-[StatCounter](www.StatCounter.com) works and is nice for demos, but not really recommended for professional use.  [Clicky](clicky.com) is industrial-strength and easier to setup than Google Analytics, but *you must disable 3rd-party cookies in your browser if you want to see your own page hits from your own computer*.  [Google Analytics](www.google.com/analytics) is the best, but hard to understand because it's geared more for marketing departments and advertising campaigns.
+[StatCounter](http://www.StatCounter.com) works and is nice for demos, but not really recommended for professional use.  [Clicky](http://clicky.com) is industrial-strength and easier to setup than Google Analytics, but *you must disable 3rd-party cookies in your browser if you want to see your own page hits from your own computer*.  [Google Analytics](http://google.com/analytics) is the best, but hard to understand because it's geared more for marketing departments and advertising campaigns.
 
 
 ### Deploying to Heroku
