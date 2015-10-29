@@ -1,0 +1,40 @@
+<div class="page-header">
+  <h1>
+    O'Hare Arrivals
+    <small><%= DateTime.now.strftime("%B %d, %Y  %l:%M %P")%>
+  </h1>
+</div>
+
+<div id="flight_count">
+  <h4><%= pluralize(@flights.count, 'flight') %>.</h4>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr class="text-center">
+      <th>Action</th>
+      <th>Flight #</th>
+      <th>Carrier</th>
+      <th>Origin</th>
+      <th>Expected Arrival Time</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flights.each do |flight| %>
+      <tr class="text-center">
+        <td>
+          <%= link_to "Delete", flight, class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+          <%= link_to "Share", '#', class: 'btn btn-sm btn-info', data: { confirm: "Are you sure?" } %>
+        </td>
+        <td><%= flight.airline.abbreviation.upcase %> <%= flight.number %></td>
+        <td><%= flight.airline.name %></td>
+        <td><%= flight.origin %></td>
+        <td><%= flight.estimated_at.strftime("%l:%M %P") if flight.estimated_at.present? %></td>
+        <td><%= flight.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
