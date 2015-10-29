@@ -61,7 +61,7 @@ INSTEAD, do the following:
 3) Run a *special invocation* of bundle install, like this:
 
 ```
-  $ bundle install --without-production
+  $ bundle install --without production
 ```
 
 This updates your Gemfile.lock file, but it will not actually install the extra gems.
