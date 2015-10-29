@@ -40,27 +40,27 @@ DO NOT follow the instructions for this part that are posted at https://devcente
 INSTEAD, do the following:
 
 1. Find the part of your Gemfile that says
-```
- gem 'sqlite3'
-```
+  ```
+   gem 'sqlite3'
+  ```
  and change it so it's wrapped inside a `development, test` group:
-```
-  group :development, :test do
-    gem 'sqlite3'
-  end
-```
+  ```
+    group :development, :test do
+      gem 'sqlite3'
+    end
+  ```
 2. Now, add a new `production` group and specify the following gems:
-```
-  group :production do
-    gem 'pg'
-    gem 'rails_12factor'
-  end
-```
+  ```
+    group :production do
+      gem 'pg'
+      gem 'rails_12factor'
+    end
+  ```
 3. Run a *special invocation* of bundle install, like this:
 
-```
-  $ bundle install --without-production
-```
+  ```
+    $ bundle install --without-production
+  ```
 
 This updates your Gemfile.lock file, but it will not actually install the extra gems.
 
